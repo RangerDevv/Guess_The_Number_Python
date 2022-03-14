@@ -3,8 +3,7 @@ import random
 randomnumber = random.randint(1, 9)
 
 while True:
-    print('guess a number')
-    userinpute = int(input())
+    userinpute = int(input('type your guess:'))
     if userinpute>randomnumber:
         print('it is too high!')
         continue
