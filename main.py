@@ -2,14 +2,17 @@ import random
 
 randomnumber = random.randint(1, 9)
 
-userinput = input()
+while True:
+    print('guess a number')
+    userinpute = int(input())
+    if userinpute>randomnumber:
+        print('it is too high!')
+        continue
+    elif userinpute<randomnumber:
+        print('too low!')
+        continue
+    else:
+        break
 
-if userinput=='hello':
-    print('hello world')
-    print(randomnumber)
-
-# if statements
-    if userinput==randomnumber:
-        print('you have guessed the right number')
-    elif userinput>randomnumber:
-        print('its too high!')
+print("you guessed it!")
+    
